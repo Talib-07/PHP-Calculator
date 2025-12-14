@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    color:rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    position: relative;
+    overflow-x: hidden;
+}
+.h2{
+    font-size: larger !important;
+}
+
+/* BACKGROUND IMAGE */
+.src {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;     /* screen ke according fit */
+    z-index: -1;           /* peeche rahe */
+}
+
+/* CALCULATOR BOX */
+.calculator {
+    width: 500px;
+
+    position: fixed;          /* 🔥 FIXED */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(71, 64, 64, 0.537);
+    padding: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 20px rgba(68, 65, 65, 0.668);
+    text-align: center;
+
+    z-index: 2;               /* image se upar */
+}
+
+
+/* TEXT */
+.calculator h2 {
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.calculator input,
+.calculator select,
+.calculator button {
+    width: 70%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* BUTTON */
+.calculator button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.calculator button:hover {
+    background: #218838;
+}
+
+/* RESULT */
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
